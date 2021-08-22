@@ -1,0 +1,37 @@
+.service-part{
+    margin-top: 200px;
+    margin-bottom: 170px;
+    .title{
+        text-align: center;
+        h1{
+            margin: 0 auto;
+            width: 500px;
+           @include title-main(36px, $font-color);
+        }
+        p{
+            margin: 0 auto;
+            width:670px ;
+            padding-top: 50px;
+            @include p-base;
+        }
+    }
+    .service-main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .item{
+            width: 33.33%;
+            text-align: center;
+            margin-top: 70px;
+            h3{
+                padding: 30px 0px 10px 0;
+                @include title-main(20px, $font-color);
+            }
+            p{
+                width: 270px;
+                margin: 0 auto;
+                @include p-base;
+            }
+        }
+    }
+}

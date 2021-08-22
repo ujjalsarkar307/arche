@@ -1,0 +1,37 @@
+
+.nav-part{
+   .container{
+       nav{
+           display: flex;
+           justify-content: space-between;
+           padding-top: 60px !important;
+           .logo{
+               width: 115px;
+               img{
+                   width: 100%;
+                   display: block;
+               }
+           }
+           ul{
+               display: flex;
+               margin-right: -200px;
+               li{
+                   margin-left: 40px;
+                   display: inline-block;
+                   a{
+                       display: inline-block;
+                       color: $font-color;
+                       font-size: $font-size-m;
+                   }
+               }
+           }
+           .nav-button{
+               margin-top: -20px;
+               margin-left: 50px;
+            a{
+                @include btn;
+            }
+           }
+       }       
+   }
+}

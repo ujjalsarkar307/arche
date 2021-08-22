@@ -1,0 +1,134 @@
+.FAQ_part{
+    margin-top: 150px;
+    text-align: center;
+    .title{
+        h1{
+            @include title-main(40px, $font-color);
+        }
+        p{
+            width: 570px;
+            margin: 0 auto;
+            @include p-base;
+        }
+    }
+    .accordion-part{
+        margin-top: 70px;
+        .accordion{
+            text-align: center;
+            width: 950px;
+            margin: 0 auto;
+                .accordion-item{
+                    background: #f5f7fa;
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                    border: 0;
+                    h3{
+                        @include title-main(20px, $font-color);
+                    }
+                }
+             .accordion-button:not(.collapsed) {
+                 color: $font-color; 
+                background-color: #f5f7fa;
+                 box-shadow: none; 
+            }
+            .accordion-button:focus {
+                z-index: 3;
+                border-color: #fff;
+                outline: 0;
+               box-shadow: none;
+            }
+            .accordion-body{
+                background: #f5f7fa;
+                p{
+                    @include p-base;
+                    text-align: left;
+                }
+            }
+            .accordion-button {
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding: 1rem 1.25rem;
+                font-size: 1rem;
+                color: #212529;
+                text-align: left;
+                background-color: #f5f7fa; 
+                border: 0;
+                border-radius: 0;
+                overflow-anchor: none;
+               
+            }
+        }
+    }
+}
+
+
+// ----------app download scss----
+
+#app_part{
+    margin-top: 100px;
+    padding-top: 50px;
+    border-top: 1px solid #f5f7fa;
+    .app-main{
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+    }
+    .text-part{
+        width: 65%;
+        h3{
+            @include title-main(48px, $font-color);
+            padding-top: 100px;
+        }
+        p{
+            @include p-base;
+        }
+        .button{
+            padding-top: 55px;
+            a{
+                display:inline-block;
+                padding: 10px;
+                border-radius: 10px;
+                background: #030303;
+                margin-right: 20px;
+                position: relative;
+                text-align: left;
+                span{
+                    display: block;
+                    margin-left: 40px;
+                }
+                .first{
+                    font-family: $fontfamily-p;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #fff;
+                }
+                .second{
+                    font-family: $fontfamily-p;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #fff;
+                }
+                i{
+                    display: block;
+                    position: absolute;
+                    top: 11px;
+                    left: 10px;
+                    font-size: 28px;
+                    color: #fff;
+                }
+
+            }
+        }
+    }
+    .img-part{
+        width: 45%;
+        img{
+            min-width: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+
+

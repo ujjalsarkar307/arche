@@ -1,0 +1,97 @@
+$fontfamily-p: 'Poppins', sans-serif;
+
+$font-weight-r: 400;
+$font-weight-sb: 600;
+
+$font-size-n: 16px;
+$font-size-m: 18px;
+
+
+$font-color-blue: #2500f9;
+$white: #fff;
+$font-color: #242f51;
+
+
+@mixin btn {
+    display: inline-block;
+    padding: 20px 40px;
+    color: $white;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 50px;
+    font-size: $font-size-n;
+    font-family: $fontfamily-p;
+    background: $font-color-blue;
+    transition: all ease .3s;
+    &:hover{
+        color:#2500f9;
+        background: #fff;
+        box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+    }
+}
+
+@mixin heading($fontfamily-p, $font-weight, $font-size, $color ){
+    font-family: $fontfamily-p;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+}
+
+@mixin para($fontfamily-p, $font-weight, $font-size, $color ){
+    font-family: $fontfamily-p;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+}
+
+@mixin p-base{
+    font-family: $fontfamily-p;
+    font-weight: $font-weight-r;
+    font-size: $font-size-n;
+    color: $font-color;
+}
+
+@mixin title-main($font-size, $color){
+    font-family: $fontfamily-p;
+    font-weight: $font-weight-sb;
+    font-size: $font-size;
+    color: $color;
+}
+
+
+@mixin arrow ($top, $left, $transform){
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #f3f6fa;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 20px;
+    color: #eff0f3;
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: $transform;
+}
+
+
+.title-head{
+    font-family: $fontfamily-p;
+    font-weight: $font-weight-sb;
+    font-size: 20px;
+}
+
+.title-red{
+    color: #f55767;
+    @extend .title-head;
+}
+
+.title-blue{
+    color: #2563ff !important;
+    @extend .title-head;
+}
+
+.title-green{
+    color: #40975f !important;
+    @extend .title-head;
+}

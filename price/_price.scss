@@ -1,0 +1,111 @@
+.price_part{
+    width: 700px;
+    margin: 100px auto;
+    .title{
+        
+        h1{
+            text-align: center;
+            width: 600px;
+            @include title-main (36px, $font-color);
+        }
+        p{
+            text-align: center;
+            width:650px;
+          @include p-base;
+        }
+    }
+
+    .skltbs-tab-group{
+        margin: 60px auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 352px;
+        height: 90px;
+        border-radius: 50px;
+        border: 1px solid #b3b3b3;
+        margin-left: 150px;
+        button{
+          @include btn;
+          margin-right: 38px;
+          line-height: 20px;
+        }
+        .deactive{
+            font-family:  $fontfamily-p;
+            font-weight: 600;
+            background: #fff;
+            color: $font-color-blue;
+            padding: 20px 40px;
+            font-size: 16px;
+            border: 0;
+            outline: 0;
+            &:hover{
+                @include btn;
+            }
+        }
+    }
+
+.skltbs-panel-group{
+    text-align: center;
+    .skltbs-panel{
+        display: flex;
+    .item{
+        width: 320px;
+        padding-bottom: 30px;
+        margin-right: 20px;
+        box-shadow: 0px 0px 5px 1px rgba(rgba(0, 0, 0, 0),.4);
+        transition: all ease .3s;
+        &:hover{
+            box-shadow: 0px 0px 5px 1px rgba(rgba(0, 0, 0, 0),.0);
+            
+        }
+    .free-price{
+        background: linear-gradient(to top, #ddd, #fff, #fbfbfb);
+        padding-top: 70px;
+        .rate{
+            font-family: $fontfamily-p;
+            font-weight: 700;
+            font-size: 60px;
+            color: $font-color;
+            margin: 70px 0 35px 0;
+        }
+        .month{
+            font-family: $fontfamily-p;
+            font-weight: $font-weight-r;
+            font-size: 18px;
+            color: #999999;
+        }
+        h3{
+            @include title-main(20px, $font-color);
+        }
+             h5{
+                @include title-main(16px, rgb(131, 133, 139));
+                padding-bottom: 40px;
+            }
+        }
+        .list-item{
+            padding-top: 70px;
+            li{
+               @include  p-base;
+               padding-bottom: 30px;
+            }
+        }
+
+        button{
+            @include btn;
+            margin-top: 35px;
+        }
+        a{
+            display: block;
+            color: $font-color-blue;
+            font-weight: 700;
+            font-size: 20px;
+            font-family: $fontfamily-p;
+            padding-top: 20px;
+        }
+
+    }
+ }
+}
+}

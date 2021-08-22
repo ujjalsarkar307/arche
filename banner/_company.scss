@@ -1,0 +1,110 @@
+.company-part{
+    text-align: center;
+    margin-top: 200px;
+    .container{
+        .title{
+            p{
+                @include p-base;
+                padding-bottom: 40px;
+            }
+        }
+    }
+}
+
+// ------app-part
+
+.app-features-part{
+    margin-top: 200px;
+    margin-left: -90px;
+    .container{
+        .app-main{
+            display: flex;
+            justify-content: space-between;
+            .img{
+                width: 60%;
+                height: 100vh !important;
+                img{
+                    
+                    margin-left: 0;
+                }
+            }
+            .text-part{
+               padding-top: 20px;
+               .app-title{
+                   h1{
+                       width: 290px;
+                       @include title-main(36px, $font-color);
+                   }
+                   p{
+                       width: 500px;
+                     @include p-base;
+                   }
+               }
+               .app-details{
+                   padding-left: 40px;
+                   padding-top: 40px;
+                   .item{
+                       display: flex;
+                       justify-content: space-between;
+                       margin-top: 60px;
+                       .icon{
+                           margin-right: 20px;
+                       }
+                       .item-text{
+                           h3{
+                               padding-bottom: 15px;                     
+                           }
+                           p{
+                            width: 262px;
+                            margin-right: 162px;
+                            @include p-base;
+                           }
+                       }
+                   }
+               }
+            }
+        }
+        .app-bottom{
+           padding-left: 150px;
+            margin: 155px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .left-part{
+                position: relative;
+                h1{
+                    width: 461px;
+                    @include title-main(40px, $font-color)
+                }
+                &:after{
+                    position: absolute;
+                    content: "";
+                    top: 25px;
+                    right: -38px;
+                    width: 1px;
+                    height: 154px;
+                    background: $font-color;
+                }
+            }
+            .right-part{
+                p{
+                    margin-left: 100px;
+                    width: 83%;
+                    @include p-base;
+                }
+            }
+        }
+        .rewards-part{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .item{
+                margin-left: 80px;
+                p{
+                    padding-top: 10px;
+                    @include p-base;
+                }
+            }
+        }
+    }
+}

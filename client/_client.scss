@@ -1,0 +1,58 @@
+.client_part{
+    margin-top: 200px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+    .client_img{
+        .img{
+            padding-top: 170px;
+            width: 100%;
+            img{
+                width: 535px;
+                min-height: 500px;
+            }
+        }
+    }
+    .client_about{
+        // margin-right: 200px;
+        h1{
+            width: 532px;
+            @include title-main(40px, $font-color);
+        }
+        p{
+            width: 600px;
+            padding-top: 35px;
+            @include  p-base;
+        }
+        .icon{
+            padding-top: 40px;
+            i{
+                display: inline-block;
+                font-size: 20px;
+                color: #ffcc00;
+            }
+        }
+        .details{
+            padding-top: 30px;
+            height: 400px;
+            h3{
+               @include title-main(20px, $font-color);
+            }
+            p{
+                @include  p-base;
+            }
+        .d-img{
+            display: flex;
+            margin-top: 30px;
+            .name{
+                padding-top: 30px;
+                padding-left: 20px;
+                span{
+                    @include para($fontfamily-p, $font-weight-r, 18px, $font-color);
+                }
+            }
+         }
+      }
+   }
+  }
+}

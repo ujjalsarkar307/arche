@@ -1,0 +1,81 @@
+.banner-part{
+    background: url(../images/main-banner.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    z-index: 9999;
+    position: relative;
+    .container{
+        .banner-main{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .text-part{
+                align-self: center;
+                width: 60%;
+                .editor{
+                    width: 500px;
+                    padding: 13px 40px 13px 0px;
+                    background: #e2eaed;
+                    border-radius: 30px;
+                    font-family: $fontfamily-p;
+                    font-weight: 400;
+                    font-size: $font-size-m;
+                    color: $font-color;
+                    i{
+                       width: 40px;
+                       height: 40px;
+                       color: $white;
+                       font-size: 25px;
+                       text-align: center;
+                       line-height: 40px;
+                       border-radius: 50%;
+                       background: #feaa25;
+                       margin-right: 12px;
+                    }
+                }
+                h1{
+                    padding-top: 30px;
+                    @include heading($fontfamily-p, 700, 60px, $font-color);
+                }
+                p{
+                    width: 500px;
+                    @include para($fontfamily-p, 400, 18px, $font-color);
+                }
+                .active{
+                    margin-top: 40px;
+                    margin-left: 0;
+                    margin-right: 30px;
+                   @include btn;
+                }
+                .deactive{
+                    font-family:  $fontfamily-p;
+                    font-weight: 600;
+                    color: $font-color-blue;
+                    padding: 20px 40px;
+                    font-size: 16px;
+                    &:hover{
+                        @include btn; 
+                    }
+                }
+            }
+            .img-part{
+                width: 40%;
+                margin-top: 40px;
+                text-align: right;
+                img{
+                    height: 700px;
+                    border-radius: 50px;
+                    box-shadow: 0px 0px 7px 10px rgba(0, 0, 0, 0.1)
+                }
+            }
+        }
+    }
+    .banner-bottom-img{
+        position: absolute;
+        bottom: -238px;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        z-index: -28;
+    }
+}

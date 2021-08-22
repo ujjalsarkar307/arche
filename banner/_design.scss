@@ -1,0 +1,26 @@
+.design-part{
+    margin-top: 110px;
+    .container{
+        .design-main{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            .text{
+                margin-left: 80px;
+                padding-top: 100px;
+                h1{
+                    width: 400px;
+                    @include title-main(36px, $font-color);
+                }
+                p{
+                    padding-top: 40px;
+                   @include p-base;
+                }
+                a{
+                    margin-top: 40px;
+                    @include btn;
+                }
+            }
+        }
+    }
+}

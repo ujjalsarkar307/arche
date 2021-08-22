@@ -1,0 +1,40 @@
+.ultimate-feature{
+    .title{
+        h1{
+            width: 370px;
+            @include title-main(36px, $font-color);
+        }
+        p{
+            width: 400px;
+            @include p-base;
+        }
+    }
+    .ultimate-main{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        .text-main{
+                width: 146%;
+                display: flex;
+                flex-wrap: wrap;
+            .item{
+                width: 250px;
+                margin-top: 70px;
+                margin-right: 40px;
+                h3{
+                    padding: 10px 0 30px 0;
+                    @include title-main(20px ,$font-color);
+                }
+                p{
+                    // width: 300px;
+                    @include p-base;
+                }
+            }
+        }
+        .img-part{
+            width: 40%;
+            margin-left: 100px;
+        }
+    }
+}

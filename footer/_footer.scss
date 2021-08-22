@@ -1,0 +1,79 @@
+.footer-part{
+    text-align: center;
+    background: #09142e;
+    padding: 100px 0;
+    .logo{
+        text-align: center;
+    }
+    ul{
+        padding-top: 46px;
+        li{
+            display: inline-block;
+            margin:0  30px;
+            color: #fff !important;
+            @include p-base;
+        }
+    }
+    .icon{
+        padding-top: 50px;
+        & i{
+            display: inline-block;
+            font-size: 30px;
+            color: #273043;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: all ease .3s;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+    p{
+        font-family:  $fontfamily-p;
+        font-weight: 400;
+        font-size: 14px;
+        color: #505461;
+        padding-top: 80px;
+    }
+}
+
+
+
+// -----backtotop button css start
+
+#button {
+    display: inline-block;
+    background-color: $font-color;
+    width: 50px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    i{
+        color: #fff;
+        font-size: 20px;
+    }
+  }
+
+ 
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
